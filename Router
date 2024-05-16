@@ -72,6 +72,7 @@ sudo apt install isc-dhcp-server iptables-persistent
 
 Настройка сетевых интерфейсов:
 sudo nano /etc/netplan/01-netcfg.yaml
+
 network:
   version: 2
   renderer: networkd
@@ -84,6 +85,7 @@ network:
     eth2:
       addresses:
         - 192.168.2.1/24
+
 
 Примените изменения:
 sudo netplan apply
