@@ -127,19 +127,11 @@ sudo iptables-save > /etc/iptables/rules.v4
 
 
 
-На клиентах:
 
-sudo nano /etc/network/interfaces
 
-Пример настройки для DHCP-клиента:
-auto lo
-iface lo inet loopback
 
-auto ens4
-iface ens4 inet dhcp
 
-auto ens3
-iface ens3 inet dhcp
+
 
 
 Пример настройки для статического IP:
